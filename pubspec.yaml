@@ -1,0 +1,72 @@
+name: calmy
+version: 1.0.0+1
+publish_to: none
+description: The anxiety disorder platform.
+environment:
+  sdk: ">=3.0.2 <4.0.0"
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
+  flutter:
+    sdk: flutter
+  avatar_glow: ^2.0.2
+  awesome_drawer_bar: ^1.1.1
+  carousel_slider: ^4.2.1
+  date_picker_timeline: ^1.2.3
+  dialog_flowtter: ^0.3.3
+  flutter_native_splash: ^2.2.8
+  flutter_screenutil: ^5.7.0
+  flutter_tts: ^3.6.3
+  flutter_zoom_drawer: ^3.0.4+1
+  google_fonts: ^4.0.3
+  percent_indicator: ^4.2.3
+  speech_to_text: ^6.1.1
+  syncfusion_flutter_charts: ^21.1.37
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.12.0"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/dialog_flow_auth.json
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/icon_launcher.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/icons/icon_launcher.png"
+    background_color: "#FFFFFF"
+    theme_color: "#4349FF"
+  windows:
+    generate: true
+    image_path: "assets/icons/icon_launcher.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/icons/icon_launcher.png"
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/icons/icon_splash.png
+  branding: assets/icons/icon_splash.png
+  color_dark: "#121212"
+  image_dark: assets/icons/icon_splash.png
+  branding_dark: assets/icons/icon_splash.png
+
+  android_12:
+    image: assets/icons/icon_splash.png
+    icon_background_color: "#ffffff"
+    image_dark: assets/icons/icon_splash.png
+    icon_background_color_dark: "#121212"
+
+  web: false
